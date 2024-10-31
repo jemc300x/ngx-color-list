@@ -7,13 +7,13 @@ import{c as Eo,d as Oi,f as _e,g as Ni,h as Pi}from"./chunk-AOAAIP35.js";import{
     ></<ngx-color-list>
   `;codeSnippeForFormControlTS=`
     import { Component } from '@angular/core';
-    import { ColorsComponent } from 'colors';
-
+    import { NgxColorListComponent } from 'ngx-color-list';
+    
     @Component({
       selector: 'app-root',
       standalone: true,
       imports: [
-        ColorsComponent,
+        NgxColorListComponent,
       ],
       templateUrl: './app.component.html',
       styleUrl: './app.component.scss',
@@ -29,13 +29,13 @@ import{c as Eo,d as Oi,f as _e,g as Ni,h as Pi}from"./chunk-AOAAIP35.js";import{
     ></<ngx-color-list>
   `;codeSnippeForFormControlWithDefailValuesTS=`
     import { Component } from '@angular/core';
-    import { ColorsComponent } from 'colors';
-
+    import { NgxColorListComponent } from 'ngx-color-list';
+    
     @Component({
       selector: 'app-root',
       standalone: true,
       imports: [
-        ColorsComponent,
+        NgxColorListComponent,
       ],
       templateUrl: './app.component.html',
       styleUrl: './app.component.scss',
@@ -51,14 +51,13 @@ import{c as Eo,d as Oi,f as _e,g as Ni,h as Pi}from"./chunk-AOAAIP35.js";import{
     ></<ngx-color-list>
   `;codeSnippeForModelTS=`
     import { Component, model } from '@angular/core';
-    import { ColorsComponent } from 'colors';
-
-
+    import { NgxColorListComponent } from 'ngx-color-list';
+    
     @Component({
       selector: 'app-root',
       standalone: true,
       imports: [
-        ColorsComponent,
+        NgxColorListComponent,
       ],
       templateUrl: './app.component.html',
       styleUrl: './app.component.scss',
@@ -74,14 +73,13 @@ import{c as Eo,d as Oi,f as _e,g as Ni,h as Pi}from"./chunk-AOAAIP35.js";import{
     ></<ngx-color-list>
   `;codeSnippeForModelWithDefaultValuesTS=`
     import { Component, model } from '@angular/core';
-    import { ColorsComponent } from 'colors';
-
-
+    import { NgxColorListComponent } from 'ngx-color-list';
+    
     @Component({
       selector: 'app-root',
       standalone: true,
       imports: [
-        ColorsComponent,
+        NgxColorListComponent,
       ],
       templateUrl: './app.component.html',
       styleUrl: './app.component.scss',
@@ -122,14 +120,13 @@ import{c as Eo,d as Oi,f as _e,g as Ni,h as Pi}from"./chunk-AOAAIP35.js";import{
     ></<ngx-color-list>  
   `;codeSnippeForWithDiferentConfigsTS=`
     import { Component, model } from '@angular/core';
-    import { ColorsComponent } from 'colors';
-
-
+    import { NgxColorListComponent } from 'ngx-color-list';
+    
     @Component({
       selector: 'app-root',
       standalone: true,
       imports: [
-        ColorsComponent,
+        NgxColorListComponent,
       ],
       templateUrl: './app.component.html',
       styleUrl: './app.component.scss',
