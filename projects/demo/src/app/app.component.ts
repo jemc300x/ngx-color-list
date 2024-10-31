@@ -6,7 +6,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTabsModule } from '@angular/material/tabs';
 import { RouterOutlet } from '@angular/router';
-import { ColorsComponent } from 'ngx-color-list';
+import { NgxColorListComponent } from 'ngx-color-list';
 import { Highlight, HighlightLoader } from 'ngx-highlightjs';
 
 @Component({
@@ -14,7 +14,7 @@ import { Highlight, HighlightLoader } from 'ngx-highlightjs';
   standalone: true,
   imports: [
     RouterOutlet,
-    ColorsComponent,
+    NgxColorListComponent,
     ReactiveFormsModule,
     JsonPipe,
     MatTabsModule,
@@ -44,13 +44,13 @@ export class AppComponent implements OnInit {
 
   codeSnippeForFormControlTS = `
     import { Component } from '@angular/core';
-    import { ColorsComponent } from 'colors';
-
+    import { NgxColorListComponent } from 'ngx-color-list';
+    
     @Component({
       selector: 'app-root',
       standalone: true,
       imports: [
-        ColorsComponent,
+        NgxColorListComponent,
       ],
       templateUrl: './app.component.html',
       styleUrl: './app.component.scss',
@@ -70,13 +70,13 @@ export class AppComponent implements OnInit {
 
   codeSnippeForFormControlWithDefailValuesTS = `
     import { Component } from '@angular/core';
-    import { ColorsComponent } from 'colors';
-
+    import { NgxColorListComponent } from 'ngx-color-list';
+    
     @Component({
       selector: 'app-root',
       standalone: true,
       imports: [
-        ColorsComponent,
+        NgxColorListComponent,
       ],
       templateUrl: './app.component.html',
       styleUrl: './app.component.scss',
@@ -96,14 +96,13 @@ export class AppComponent implements OnInit {
 
   codeSnippeForModelTS = `
     import { Component, model } from '@angular/core';
-    import { ColorsComponent } from 'colors';
-
-
+    import { NgxColorListComponent } from 'ngx-color-list';
+    
     @Component({
       selector: 'app-root',
       standalone: true,
       imports: [
-        ColorsComponent,
+        NgxColorListComponent,
       ],
       templateUrl: './app.component.html',
       styleUrl: './app.component.scss',
@@ -123,14 +122,13 @@ export class AppComponent implements OnInit {
 
   codeSnippeForModelWithDefaultValuesTS = `
     import { Component, model } from '@angular/core';
-    import { ColorsComponent } from 'colors';
-
-
+    import { NgxColorListComponent } from 'ngx-color-list';
+    
     @Component({
       selector: 'app-root',
       standalone: true,
       imports: [
-        ColorsComponent,
+        NgxColorListComponent,
       ],
       templateUrl: './app.component.html',
       styleUrl: './app.component.scss',
@@ -175,14 +173,13 @@ export class AppComponent implements OnInit {
 
   codeSnippeForWithDiferentConfigsTS = `
     import { Component, model } from '@angular/core';
-    import { ColorsComponent } from 'colors';
-
-
+    import { NgxColorListComponent } from 'ngx-color-list';
+    
     @Component({
       selector: 'app-root',
       standalone: true,
       imports: [
-        ColorsComponent,
+        NgxColorListComponent,
       ],
       templateUrl: './app.component.html',
       styleUrl: './app.component.scss',

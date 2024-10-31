@@ -1,6 +1,6 @@
 import { Component, effect, inject, input, model } from '@angular/core';
-import { ColorConfig, ColorComponent } from './color/color.component';
 import { ControlValueAccessor, NgControl } from '@angular/forms';
+import { ColorComponent, ColorConfig } from './color/color.component';
 
 @Component({
   selector: 'ngx-color-list',
@@ -26,7 +26,7 @@ import { ControlValueAccessor, NgControl } from '@angular/forms';
   }
   `,
 })
-export class ColorsComponent implements ControlValueAccessor {
+export class NgxColorListComponent implements ControlValueAccessor {
   colors = input.required<string[]>();
   colorsSelected: string[] = [];
   readonly config = input<Partial<ColorConfig>>();
