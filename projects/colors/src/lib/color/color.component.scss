@@ -1,0 +1,38 @@
+:host {
+  --checkColor: #fff;
+  --currentColor: #fff;
+  --colorHeight: 30px;
+  --colorWidth: 30px;
+  --borderRadius: 15px;
+}
+
+.btn-color {
+  height: var(--colorHeight);
+  width: var(--colorWidth);
+  border-radius: var(--borderRadius);
+  cursor: pointer;
+  outline: 1px solid transparent;
+  border: 1px solid transparent;
+  position: relative;
+  color: var(--currentColor);
+  background-color: currentColor;
+  box-shadow: 0 0 1px 1px #d8d8d8;
+
+  &.selected {
+    outline: 1px solid currentColor;
+    border: 1px solid var(--checkColor);
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      content: "";
+      display: inline-block;
+      width: 12px;
+      height: 6px;
+      border-left: 2px solid var(--checkColor);
+      border-bottom: 2px solid var(--checkColor);
+      transform: rotate(-45deg) translate(0%, -112%);
+    }
+  }
+}

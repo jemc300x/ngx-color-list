@@ -1,0 +1,136 @@
+<h1>Ngx Color List</h1>
+<p>This is a component for angular application that show a list of colors.</p>
+<mat-card appearance="outlined">
+  <mat-card-header>
+    <mat-card-title>FormControl</mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="content">
+    <mat-tab-group dynamicHeight>
+      <mat-tab label="HTML">
+        <pre><code [highlight]="codeSnippeForFormControlHTML" language="html"></code></pre>
+      </mat-tab>
+      <mat-tab label="TS">
+        <pre><code [highlight]="codeSnippeForFormControlTS" language="typescript"></code></pre>
+      </mat-tab>
+    </mat-tab-group>
+
+    <ngx-color-list
+      [colors]="colorList"
+      [formControl]="formControl"
+    ></ngx-color-list>
+    <pre>{{ formControl.value | json }}</pre>
+  </mat-card-content>
+</mat-card>
+
+<mat-card appearance="outlined">
+  <mat-card-header>
+    <mat-card-title> FormControl with default values </mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="content">
+    <mat-tab-group dynamicHeight>
+      <mat-tab label="HTML">
+        <pre><code [highlight]="codeSnippeForFormControlWithDefailValuesHTML" language="html"></code></pre>
+      </mat-tab>
+      <mat-tab label="TS">
+        <pre><code [highlight]="codeSnippeForFormControlWithDefailValuesTS" language="typescript"></code></pre>
+      </mat-tab>
+    </mat-tab-group>
+
+    <ngx-color-list
+      class="colores"
+      [colors]="colorList"
+      [formControl]="formControlWithValues"
+    ></ngx-color-list>
+    <pre>{{ formControlWithValues.value | json }}</pre>
+  </mat-card-content>
+</mat-card>
+
+<mat-card appearance="outlined">
+  <mat-card-header>
+    <mat-card-title>Model</mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="content">
+    <mat-tab-group dynamicHeight>
+      <mat-tab label="HTML">
+        <pre><code [highlight]="codeSnippeForModelHTML" language="html"></code></pre>
+      </mat-tab>
+      <mat-tab label="TS">
+        <pre><code [highlight]="codeSnippeForModelTS" language="typescript"></code></pre>
+      </mat-tab>
+    </mat-tab-group>
+
+    <ngx-color-list
+      class="colores"
+      [colors]="colorList"
+      [(value)]="colors"
+    ></ngx-color-list>
+    <pre>{{ colors() | json }}</pre>
+  </mat-card-content>
+</mat-card>
+
+<mat-card appearance="outlined">
+  <mat-card-header>
+    <mat-card-title>Model with default values</mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="content">
+    <mat-tab-group dynamicHeight>
+      <mat-tab label="HTML">
+        <pre><code [highlight]="codeSnippeForModelWithDefaultValuesHTML" language="html"></code></pre>
+      </mat-tab>
+      <mat-tab label="TS">
+        <pre><code [highlight]="codeSnippeForModelWithDefaultValuesTS" language="typescript"></code></pre>
+      </mat-tab>
+    </mat-tab-group>
+
+    <ngx-color-list [colors]="colorList" [(value)]="colorsWithValues" />
+    <pre>{{ colorsWithValues() | json }}</pre>
+  </mat-card-content>
+</mat-card>
+
+<mat-card appearance="outlined">
+  <mat-card-header>
+    <mat-card-title>With diferent configs</mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="content">
+    <mat-tab-group dynamicHeight>
+      <mat-tab label="HTML">
+        <pre><code [highlight]="codeSnippeForWithDiferentConfigsHTML" language="html"></code></pre>
+      </mat-tab>
+      <mat-tab label="TS">
+        <pre><code [highlight]="codeSnippeForWithDiferentConfigsTS" language="typescript"></code></pre>
+      </mat-tab>
+    </mat-tab-group>
+
+    <ngx-color-list
+      class="colores"
+      [colors]="colorList"
+      [config]="{ height: '40px', width: '40px', borderRadius: '50%' }"
+      [(value)]="colorsWithDiffConfigs"
+    ></ngx-color-list>
+    <ngx-color-list
+      class="colores"
+      [colors]="colorList"
+      [config]="{ height: '40px', borderRadius: '25px' }"
+      [(value)]="colorsWithDiffConfigs"
+    ></ngx-color-list>
+    <ngx-color-list
+      class="colores"
+      [colors]="colorList"
+      [config]="{ width: '40px', borderRadius: '25px' }"
+      [(value)]="colorsWithDiffConfigs"
+    ></ngx-color-list>
+    <ngx-color-list
+      class="colores"
+      [colors]="colorList"
+      [config]="{ borderRadius: '0' }"
+      [(value)]="colorsWithDiffConfigs"
+    ></ngx-color-list>
+    <ngx-color-list
+      class="colores"
+      [colors]="colorList"
+      [config]="{ borderRadius: '10%' }"
+      [(value)]="colorsWithDiffConfigs"
+    ></ngx-color-list>
+    <pre>{{ colorsWithDiffConfigs | json }}</pre>
+  </mat-card-content>
+</mat-card>

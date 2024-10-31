@@ -1,0 +1,7 @@
+<button
+  id="btn-color-{{ currentId }}"
+  type="button"
+  class="btn-color"
+  [ngClass]="{ selected: isSelected() }"
+  (click)="onClick()"
+></button>
