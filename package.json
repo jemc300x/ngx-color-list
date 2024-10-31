@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build ngx-color-list && ng build demo --base-href /ngx-color-list/ && rm -rf docs &&  cp -r dist/demo/browser docs  ",
+    "build": "ng build ngx-color-list && rm -f dist/ngx-color-list/README.md && cp projects/ngx-color-list/README-lib.md dist/ngx-color-list/README.md && ng build demo --base-href /ngx-color-list/ && rm -rf docs &&  cp -r dist/demo/browser docs",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
