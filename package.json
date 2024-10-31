@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build colors && ng build demo --base-href /ngx-color-list/ && rm -rf docs &&  cp -r dist/demo/browser docs  ",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
