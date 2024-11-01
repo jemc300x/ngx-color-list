@@ -17,5 +17,6 @@
   "keywords": [
     "angular",
     "ngx-color-list"
-  ]
+  ],
+  "license": "MIT"
 }
